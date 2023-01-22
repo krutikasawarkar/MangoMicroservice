@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj": {}
+  },
+  "projects": {
+    "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
+        "projectName": "Mango.Services.Identity",
+        "projectPath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
+        "packagesPath": "C:\\Users\\kruti\\.nuget\\packages\\",
+        "outputPath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kruti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net60": {
+            "projectReferences": {
+              "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj": {
+                "projectPath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net60": {
+          "dependencies": {
+            "Duende.IdentityServer.AspNetIdentity": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[1.25.10, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
+        "projectName": "Mango.Services.ProductAPI",
+        "projectPath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\Mango.Services.ProductAPI.csproj",
+        "packagesPath": "C:\\Users\\kruti\\.nuget\\packages\\",
+        "outputPath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.ProductAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kruti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net60": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net60": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
