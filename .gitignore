@@ -1,0 +1,12 @@
+/.vs/MangoRestaurent/v16/.suo
+/Mango.Services.Identity/obj/Debug/net6.0/Mango.Services.Identity.assets.cache
+/Mango.Services.Identity/obj/Debug/net6.0/Mango.Services.Identity.csproj.FileListAbsolute.txt
+/Mango.Services.ProductAPI/obj/Debug/net6.0/Mango.Services.ProductAPI.assets.cache
+/Mango.Services.ProductAPI/obj/Debug/net6.0/Mango.Services.ProductAPI.csproj.FileListAbsolute.txt
+/Mango.Services.ProductAPI/obj/Mango.Services.ProductAPI.csproj.nuget.dgspec.json
+/Mango.Services.ProductAPI/obj/Mango.Services.ProductAPI.csproj.nuget.g.props
+/Mango.Services.ProductAPI/obj/Mango.Services.ProductAPI.csproj.nuget.g.targets
+/Mango.Services.ProductAPI/obj/project.assets.json
+/Mango.Services.ProductAPI/obj/project.nuget.cache
+/Mango.Web/obj/Debug/net6.0/Mango.Web.assets.cache
+/Mango.Web/obj/Debug/net6.0/Mango.Web.csproj.FileListAbsolute.txt
