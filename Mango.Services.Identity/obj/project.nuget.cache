@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nU6Nw5oZbVcr+mMVrTsOOOeR9+TzRkBWDwECn5bnBWZt4KK1XnDhEfiI0wWYQYNx3Dg57ja163ppfwl5yE9tvA==",
+  "dgSpecHash": "IJasFNbqsV6rw1WGtfgpC+2VgC+h1vT++IzAsnaQvCDbs92bXwiqpdQlE0bgVyTzN/zHtwRKt0mJHndUBaZ+1w==",
   "success": true,
   "projectFilePath": "D:\\SkillUp\\PracticeProjects\\Microservices\\Udemy\\MangoMicroservice\\MangoMicroservice\\Mango.Services.Identity\\Mango.Services.Identity.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "C:\\Users\\kruti\\.nuget\\packages\\duende.identityserver.storage\\5.1.1\\duende.identityserver.storage.5.1.1.nupkg.sha512",
     "C:\\Users\\kruti\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kruti\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",
-    "C:\\Users\\kruti\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.12\\microsoft.aspnetcore.authentication.jwtbearer.5.0.12.nupkg.sha512",
+    "C:\\Users\\kruti\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\kruti\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.12\\microsoft.aspnetcore.authentication.openidconnect.5.0.12.nupkg.sha512",
     "C:\\Users\\kruti\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "C:\\Users\\kruti\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",

@@ -30,6 +30,9 @@ var builderIdentity = builder.Services.AddIdentityServer(options =>
 builderIdentity.AddDeveloperSigningCredential();
 
 var app = builder.Build();
+var scope = app.Services.CreateScope();
+var service = scope.ServiceProvider.GetService<IDbInitializer>();
+service.Initialize();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -41,9 +44,6 @@ if (!app.Environment.IsDevelopment())
 app.UseIdentityServer();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.Services.GetService<IDbInitializer>().Initialize();
-app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
