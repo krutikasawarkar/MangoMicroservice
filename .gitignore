@@ -253,3 +253,7 @@
 /Mango.Services.Identity/obj/project.assets.json
 /Mango.Services.Identity/obj/project.nuget.cache
 /Mango.Services.Identity/obj/staticwebassets.pack.sentinel
+/Mango.Web/obj/Mango.Web.csproj.nuget.dgspec.json
+/Mango.Services.ProductAPI/bin/
+/Mango.Services.ProductAPI/obj/
+/Mango.Web/obj/

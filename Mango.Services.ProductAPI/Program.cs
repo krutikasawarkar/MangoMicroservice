@@ -14,6 +14,31 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy("ApiScope", policy =>
+        {
+            policy.RequireAuthenticatedUser();
+            policy.RequireClaim("scope", "mango");
+        });
+    });
+
+builder.Services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options =>
+                {
+
+                    options.Authority = "http://localhost:5221/";
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateAudience = false
+                    };
+                });
+
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddSwaggerGen(
     c =>
     {
@@ -45,44 +70,19 @@ builder.Services.AddSwaggerGen(
                     }
 
                 });
-
-        builder.Services.AddAuthentication("Bearer")
-                        .AddJwtBearer("Bearer", options =>
-                        {
-
-                            options.Authority = "https://localhost:44365/";
-                            options.TokenValidationParameters = new TokenValidationParameters
-                            {
-                                ValidateAudience = false
-                            };
-                        });
     });
+var app = builder.Build();
 
-    builder.Services.AddAuthorization(options =>
-        {
-            options.AddPolicy("ApiScope", policy =>
-            {
-                policy.RequireAuthenticatedUser();
-                policy.RequireClaim("scope", "mango");
-            });
-        });
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-        IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
-        builder.Services.AddSingleton(mapper);
-        builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-        builder.Services.AddScoped<IProductRepository, ProductRepository>();
-        var app = builder.Build();
+app.UseAuthorization();
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+app.MapControllers();
 
-        app.UseAuthorization();
-
-        app.MapControllers();
-
-        app.Run();
+app.Run();
 
