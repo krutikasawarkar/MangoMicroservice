@@ -257,3 +257,6 @@
 /Mango.Services.ProductAPI/bin/
 /Mango.Services.ProductAPI/obj/
 /Mango.Web/obj/
+/Mango.Web/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+/Mango.Web/bin/Debug/
+/Mango.Services.Identity/obj/

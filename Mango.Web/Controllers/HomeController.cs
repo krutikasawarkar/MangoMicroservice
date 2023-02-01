@@ -1,4 +1,5 @@
 ﻿using Mango.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -11,6 +12,17 @@ namespace Mango.Web.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+
+        [Authorize]
+        public IActionResult Login()
+        {
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Logout()
+        {
+            return SignOut("Cookies", "iodc");
         }
 
         public IActionResult Index()
